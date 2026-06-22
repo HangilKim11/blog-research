@@ -1,0 +1,13 @@
+# 데이터 (용량/약관 — download_data.py 또는 노트북이 받음)
+**/data/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+Thumbs.db
