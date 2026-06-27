@@ -11,6 +11,7 @@
 | 폴더 (folder) | 내용 / 内容 | 글 / 記事 |
 |---|---|---|
 | [`credit-limit-debiasing/`](credit-limit-debiasing/) | 신용 한도의 인과효과를 공개 데이터 3종으로 검증 (DML형 디바이어싱) / 限度額の因果効果を公開データ3種で検証(DML型デバイアシング) | [글](https://han-co.com/ko/blog/credit-limit-debiasing) |
+| [`ssl-credit-risk/`](ssl-credit-risk/) | SSL 사전학습은 신용 GBM의 보조 피처 — AMEX 공개 데이터로 검증 / SSL事前学習は信用GBMの補助特徴量 — AMEX公開データで検証 | [글](https://han-co.com/ko/blog/ssl-credit-risk) |
 
 ## 라이선스 / ライセンス / License
 

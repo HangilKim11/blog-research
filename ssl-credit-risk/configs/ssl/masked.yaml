@@ -1,0 +1,10 @@
+defaults:
+  - _base
+  - _self_
+
+objective:
+  name: masked
+  params:
+    mask_ratio: 0.15
+    num_loss_weight: 1.0
+    cat_loss_weight: 1.0

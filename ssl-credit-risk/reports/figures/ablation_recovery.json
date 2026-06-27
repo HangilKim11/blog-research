@@ -1,0 +1,9 @@
+{
+  "hand_only": 0.79558,
+  "hand_minus_top100": 0.78966,
+  "hand_minus_top100_plus_ssl": 0.7929,
+  "full_hand_plus_ssl": 0.79662,
+  "lost": 0.005919999999999925,
+  "recovered": 0.0032400000000000206,
+  "recovery_rate": 0.5472972972973077
+}

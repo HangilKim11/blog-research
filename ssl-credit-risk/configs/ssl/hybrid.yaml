@@ -1,0 +1,18 @@
+defaults:
+  - _base
+  - _self_
+
+objective:
+  name: hybrid
+  masked:
+    mask_ratio: 0.15
+    num_loss_weight: 1.0
+    cat_loss_weight: 1.0
+  contrastive:
+    temperature: 0.1
+    proj_dim: 128
+    feature_dropout_p: 0.15
+    min_crop_len: 6
+  hybrid:
+    mask_weight: 1.0
+    contrastive_weight: 1.0

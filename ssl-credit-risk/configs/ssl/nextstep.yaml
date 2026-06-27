@@ -1,0 +1,10 @@
+defaults:
+  - _base
+  - _self_
+
+# Next-step (GPT-style) uses no CLS token; override the base encoder setting.
+encoder:
+  use_cls_token: false
+
+objective:
+  name: nextstep

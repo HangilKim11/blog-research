@@ -1,0 +1,27 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+Thumbs.db
+
+# data / artifacts (용량·약관 — 직접 다운로드 / 직접 생성)
+data/
+outputs/
+multirun/
+checkpoints/
+wandb/
+logs/
+*.pt
+*.ckpt
+*.parquet
+*.csv
+kaggle.json
+
+# caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/

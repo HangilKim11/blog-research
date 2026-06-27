@@ -1,0 +1,39 @@
+# Shared defaults inherited by every objective config.
+# Override individual fields with Hydra CLI: `+optim.lr=1e-4`, etc.
+
+encoder:
+  d_model: 128
+  n_layers: 4
+  n_heads: 4
+  dim_feedforward: 512
+  dropout: 0.1
+  cat_embed_dim: 8
+  max_seq_len: 13
+  use_cls_token: true
+
+data:
+  tokenizer_path: data/processed/v1/tokenizer.json
+  splits_path: data/splits/v1.parquet
+  train_glob: data/processed/v1/train/**/*.parquet
+  batch_size: 256
+  num_workers: 0          # IterableDataset + Windows: 0 workers is most reliable
+
+optim:
+  lr: 3.0e-4
+  weight_decay: 0.01
+  warmup_steps: 500
+  grad_clip: 1.0
+  # rough estimate -- 367k train customers / batch 256 ~= 1,433 steps per epoch
+  steps_per_epoch_estimate: 1500
+
+trainer:
+  max_epochs: 50
+  patience: 10
+  accelerator: gpu
+  devices: 1
+  precision: bf16-mixed
+  log_every_n_steps: 50
+  val_check_interval: 1.0       # check val once per epoch
+  limit_train_batches: 1.0
+  limit_val_batches: 1.0
+  wandb: true
