@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+lightgbm
+optuna
+ucimlrepo
+
+# TabFM arm needs torch + tabfm, installed separately (CUDA wheel / git source):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   pip install "tabfm[pytorch] @ git+https://github.com/google-research/tabfm.git"
+# A CUDA GPU is required for the TabFM arm (weights ~6.5GB VRAM).
